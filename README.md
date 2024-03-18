@@ -1,41 +1,25 @@
-# stylelint-config-hudochenkov
+# stylelint-config-ordering
 
-My configs for [Stylelint]. Uses rules from [`stylelint-order`].
+Ordering config for [Stylelint]. Uses rules from [`stylelint-order`].
 
-Available configs:
-
-* `stylelint-config-hudochenkov` — default config which includes rules from Stylelint core only.
-* `stylelint-config-hudochenkov/order` — config for order of content within declaration blocks and properties order. Uses [`stylelint-order`].
-* `stylelint-config-hudochenkov/full` — combines all configs above.
+Based on https://github.com/hudochenkov/stylelint-config-hudochenkov/blob/master/order.js
 
 ## Installation
 
 Install config:
 
 ```
-npm install --save-dev stylelint-config-hudochenkov
+npm install --save-dev stylelint-config-neon-order
 ```
 
 ## Usage
 
 Add chosen config to the [`extends` section](https://eslint.org/docs/user-guide/configuring#extending-configuration-files) of your Stylelint configuration:
 
-```
+```json
 {
-	"extends": ["stylelint-config-hudochenkov"]
+	"extends": ["stylelint-config-neon-order"]
 }
-```
-
-```
-{
-	"extends": ["stylelint-config-hudochenkov/full"]
-}
-```
-
-Recommended to run Stylelint with [`--max-warnings` flag](https://stylelint.io/user-guide/usage/options#maxwarnings), because many rules has [`warning` severity](https://stylelint.io/user-guide/configure#severity):
-
-```
-stylelint "**/*.css" --max-warnings 0
 ```
 
 [Stylelint]: https://stylelint.io/

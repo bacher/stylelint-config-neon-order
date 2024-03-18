@@ -17,7 +17,7 @@ module.exports = {
 				},
 				'rules',
 			],
-			{ severity: 'warning' },
+			{ severity: 'error' },
 		],
 		'order/properties-order': [
 			[
